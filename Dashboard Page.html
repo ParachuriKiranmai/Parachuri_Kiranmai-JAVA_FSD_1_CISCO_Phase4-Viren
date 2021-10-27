@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+      #home {
+        margin-top: 60px;
+        position: absolute;
+        font-size: 22px;
+      }
+
+      .navbar-toggler{
+        margin-top: 30px;
+        font-size: 22px;
+      }
+      </style>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("products");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function myFunction2(){
+        var x = document.getElementById("home");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+
+</head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+    <div class="container-fluid text-center">
+       <h2>Dashboard Page</h2>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-light dropdown-menu-md-left">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" onclick="myFunction2()"><h2>Home</h2><span class="sr-only">(current)</span></a>
+                  <div class="fixed-top text-right" id="home" style="display: none;">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-google"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="AboutUs.html"><h2>About us</h2></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  onclick="myFunction()"><h2>Products</h2></a>
+                    <div class="container" id="products" style="display: none;">
+                    <h2>Products Table</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Brand</th>
+                            <th>Category</th>
+                            <th>Colour</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                          </tr>
+                        </thead>
+                    </table>   
+                    </div> 
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h2>Courses</h2>
+                  </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-header"><h2>Languages</h2></li>
+                        <li><a href="#"><h2>Java</h2></a></li>
+                        <li><a href="#"><h2>Python</h2></a></li>
+                        <li><a href="#"><h2>.Net</h2></a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header"><h2>Databases</h2></li>
+                        <li><a href="#"><h2>MongoDB</h2></a></li>
+                        <li><a href="#"><h2>Oracle</h2></a></li>
+                        <li><a href="#"><h2>MySql</h2></a></li>
+                      </ul>                   
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html"><h2>ContactUs</h2></a>
+                  </li>
+
+              </ul>
+            </div>
+          </nav>
+    </div>
+</body>
+</html>

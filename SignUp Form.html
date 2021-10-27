@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <div class="text-center container-fluid text-monospace">
+    <h1>SignUp Form </h1>
+  </div>
+  <hr>
+  <form class="was-validated"> 
+    <div class="row m-0">
+        <div class="col-md-4">
+             <div class = "form-group">
+                 <label for = "fname">First Name</label>
+                 <input type = "text" name = "fname" class = "form-control m-xl-2" required/>
+             </div>
+        </div>
+        <div class="col-md-4">
+             <div class = "form-group">
+                 <label for = "lname">Middle Name</label>
+                 <input type = "text" name = "lname" class = "form-control m-xl-2">
+             </div>
+        </div>
+        <div class="col-md-4">
+             <div class = "form-group">
+                 <label for = "username">Last Name</label>
+                 <input type = "text" name = "username" class = "form-control m-xl-2" required/>
+             </div>
+        </div>     
+    </div>
+    <div class = "col-md-4">
+       <div class = "form-group">
+         <label for = "email">Email address</label>
+         <input type="email" name = "email" class="form-control m-xl-2" placeholder="Enter email" required>
+      </div>
+    </div>  
+    <div class="row m-0">
+     <div class="form-group col-md-4">
+        <label for = "password">Password</label>
+        <input type = "password" class = "form-control m-xl-2" id = "password" placeholder="Password">
+     </div>
+     <div class="form-group col-md-4"> 
+         <label>Confirm Password</label> 
+         <input type = "password" class = "form-control m-xl-2" id = "password" placeholder="Confirm Password">
+      </div>
+    </div>  
+    <div class = "col-md-4">
+        <div class = "form-group">
+          <label for = "age">Age</label>
+          <input type="number" name = "Age" class="form-control m-xl-2" placeholder="Enter age" required>
+       </div>
+     </div>
+     <div class="col-md-4">
+        <div class="form-group dropdown">
+            <button class="btn btn-secondary dropdown-toggle m-xl-2" id="dropdownMenuButton" type="button" data-toggle="dropdown">
+              Select City
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li class="dropdown-item">Hyderabad</a></li>
+                <li class="dropdown-item">Chennai</li>
+                <li class="dropdown-item">Bangalore</li>
+                <li class="dropdown-item">Delhi</li>
+                <li class="dropdown-item">Kerala</li>
+              </ul>
+         </div>     
+     </div>
+     <h4 class="container-fluid">Select Gender</h4>
+    <div class="container-fluid row m-0">
+       <div class="form-check col-md-4">
+      <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        <h4>Male</h4>
+      </label>
+    </div><br>
+      <div class="form-check col-md-4">
+         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+         <label class="form-check-label" for="flexCheckChecked">
+         <h4>Female</h4> 
+         </label>
+      </div>
+     <div class="form-check col-md-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+        <h4>Other</h4>
+        </label>
+      </div>
+     </div>
+    </div>
+     <div class="form-group col-md-4">
+        <label for="exampleFormControlFile1">Upload Pic</label>
+        <input type="file" class="form-control-file m-xl-2" id="exampleFormControlFile1">
+      </div>
+     <div class="form-group col-md-4">
+        <label for="exampleFormControlTextarea1">Profile Description</label>
+        <textarea class="form-control m-xl-2" id="exampleFormControlTextarea1" rows="5"></textarea>
+      </div>
+      <div class="col-12">
+      <a href="Dashboard Page.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Submit</a>
+      </div>
+    </form>    
+  </body>
+</html>
